@@ -4,7 +4,7 @@
             <span *ngIf="selectedItems?.length == 0">{{settings.text}}</span>
             <span *ngIf="settings.singleSelection">
                 <span *ngFor="let item of selectedItems;trackBy: trackByFn;">
-                    {{item.itemName}}
+                    {{item.Hex}}{{item.itemName}}
                 </span>
             </span>
             <div class="c-list" *ngIf="selectedItems?.length > 0 && !settings.singleSelection">
